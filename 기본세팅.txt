@@ -1,0 +1,11 @@
+
+ctrl+shift + p   명령
+
+
+ctrl +,  (세팅)
+
+folder > compact folders 체크 해제
+tree indent > Workbench >Tree: indent   14
+Sort order > fileFirst
+icon  > Workbench: Icon Theme - Material Icon Theme
+Theme > Workbench: Color Theme - Dark Modern

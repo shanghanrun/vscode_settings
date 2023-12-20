@@ -1,0 +1,1439 @@
+{
+	
+	"stateless widget": {
+		"scope": "dart",
+		"prefix": "stl",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class MyWidget extends StatelessWidget {",
+			"  MyWidget({super.key});",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Scaffold();",
+			"  }",
+			"}"
+		],
+		"description": "stateless widget"
+		},
+	"stateful widget": {
+		"scope": "dart",
+		"prefix": "stf",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class MyWidget extends StatefulWidget {",
+			"  MyWidget({super.key});",
+			"",
+			"  @override",
+			"  State<MyWidget> createState() => _MyWidgetState();",
+			"}",
+			"",
+			"class _MyWidgetState extends State<MyWidget> {",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Scaffold();",
+			"  }",
+			"}"
+		],
+		"description": "stateful widget"
+		},
+	"메인.dart": {
+		"scope": "dart",
+		"prefix": "main",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"void main() {",
+			"  runApp(const MyApp());",
+			"}",
+			"",
+			"class MyApp extends StatelessWidget {",
+			"  const MyApp({super.key});",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return MaterialApp(",
+			"      title:'Provider example',",
+			"      debugShowCheckedModeBanner: false,",
+			"      theme: ThemeData(",
+			"        primarySwatch: Colors.blue,      ",
+			"      ),",
+			"      home: Home()",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "메인.dart"
+		},
+	"홈.dart": {
+		"scope": "dart",
+		"prefix": "home",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $1Home extends StatelessWidget {",
+			"  const Home({super.key});",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Scaffold(",
+			"      appBar:AppBar(title:Text('Provider Sample')),",
+			"      body: CountPage(),",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "홈.dart"
+		},
+	"일반페이지": {
+		"prefix": "page",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $1Page extends StatelessWidget {",
+			"  const Page({super.key});",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Container(",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "일반페이지"
+		},
+	"텍스트": {
+		"scope": "dart",
+		"prefix": "tt",
+		"body": [
+			"Text('$1'),"
+		],
+		"description": "텍스트"
+		},
+
+	"style: 텍스트스타일": {
+		"scope": "dart",
+		"prefix": "sts",
+		"body": [
+			"style: TextStyle(fontSize:20, color:Colors.blue),"
+		],
+		"description": "Style: 텍스트스타일"
+	},
+	"TextStyle": {
+		"scope": "dart",
+		"prefix": "ts",
+		"body": [
+			"TextStyle(fontSize:20, color:Colors.blue),"
+		],
+		"description": "텍스트스타일"
+	},
+	"텍스트스타일2": {
+		"scope": "dart",
+		"prefix": "tts",
+		"body": [
+			"Text('', style: TextStyle(fontSize:20, color:Colors.blue),),"
+		],
+		"description": "텍스트스타일2"
+		},
+	"로우": {
+		"scope": "dart",
+		"prefix": "row",
+		"body": [
+			"Row(",
+			"  children:[",
+			"    $1",
+			"  ],",
+			"),"
+		],
+		"description": "로우"
+		},
+	"컬럼": {
+		"scope": "dart",
+		"prefix": "col",
+		"body": [
+			"Column(",
+			"  children:[",
+			"    $1",
+			"  ],",
+			"),"
+		],
+		"description": "컬럼"
+		},
+	"컬럼 ": {
+		"scope": "dart",
+		"prefix": "Col",
+		"body": [
+			"Column(",
+			"  children:[",
+			"    $1",
+			"  ],",
+			"),"
+		],
+		"description": "컬럼"
+		},
+	"컨테이너": {
+		"scope": "dart",
+		"prefix": "Con",
+		"body": [
+			"Container(",
+			"  ),"
+		],
+		"description": "컨테이너"
+		},
+	"컨테이너컬럼": {
+		"scope": "dart",
+		"prefix": "concol",
+		"body": [
+			"Container(",
+			"  child:Column(",
+			"    children:[",
+			"      $1",
+			"    ],",
+			"  ),",
+			"),"
+		],
+		"description": "컨테이너컬럼"
+		},
+	"컨테이너로우": {
+		"scope": "dart",
+		"prefix": "conrow",
+		"body": [
+			"Container(",
+			"  child:Row(",
+			"    children:[",
+			"      $1",
+			"    ],",
+			"  ),",
+			"),"
+		],
+		"description": "컨테이너로우"
+		},
+	"alignment: Alignment.centerLeft,": {
+		"scope": "dart",
+		"prefix": "ali",
+		"body": [
+			"alignment: Alignment.centerLeft,"
+		],
+		"description": "alignment: Alignment.centerLeft,"
+		},
+	"alignment: Alignment.centerLeft ": {
+		"scope": "dart",
+		"prefix": "alig",
+		"body": [
+			"alignment: Alignment.centerLeft,"
+		],
+		"description": "alignment: Alignment.centerLeft,"
+		},
+	"alignment: Alignment.centerLeft  ": {
+		"scope": "dart",
+		"prefix": "align",
+		"body": [
+			"alignment: Alignment.centerLeft,"
+		],
+		"description": "alignment: Alignment.centerLeft,"
+		},
+	"바텀네비게이션바": {
+		"scope": "dart",
+		"prefix": "bottomN",
+		"body": [
+			"bottomNavigationBar: BottomNavigationBar(",
+			"        ",
+			"),"
+		],
+		"description": "바텀네비게이션바"
+		},
+	"아이콘Icon": {
+		"scope": "dart",
+		"prefix": "icon",
+		"body": [
+			"Icon(Icons.mouse),"
+		],
+		"description": "아이콘Icon"
+		},
+	"아이콘Icon 마이너스": {
+		"scope": "dart",
+		"prefix": "icon",
+		"body": [
+			"Icon(Icons.remove),"
+		],
+		"description": "아이콘Icon 마이너스"
+		},
+	"아이콘icon:Icon": {
+		"scope": "dart",
+		"prefix": "icon",
+		"body": [
+			"icon: Icon(Icons.mouse),"
+		],
+		"description": "아이콘icon:Icon"
+		},
+	"SizedBox": {
+		"scope": "dart",
+		"prefix": "size",
+		"body": [
+			"SizedBox(width: 30, height: 30),"
+		],
+		"description": "SizedBox"
+		},
+	"SizedBox ": {
+		"scope": "dart",
+		"prefix": "sized",
+		"body": [
+			"SizedBox(width: 30, height: 30),"
+		],
+		"description": "SizedBox"
+		},
+	"SizedBox2": {
+		"scope": "dart",
+		"prefix": "Size",
+		"body": [
+			"SizedBox(width: 30, height: 30),"
+		],
+		"description": "SizedBox"
+		},
+	"SizedBox3": {
+		"scope": "dart",
+		"prefix": "Sized",
+		"body": [
+			"SizedBox(width: 30, height: 30),"
+		],
+		"description": "SizedBox"
+		},
+	"padding:EdgeInsets": {
+		"prefix": "pad",
+		"scope": "dart",
+		"body": [
+			"padding: EdgeInsets."
+		],
+		"description": "padding:EdgeInsets"
+		},	
+	"padding:EdgeInsets ": {
+		"prefix": "padd",
+		"scope": "dart",
+		"body": [
+			"padding: EdgeInsets."
+		],
+		"description": "padding:EdgeInsets"
+		},	
+	"패딩 All": {
+		"prefix": "pada",
+		"scope": "dart",
+		"body": [
+			"padding: EdgeInsets.all(10),"
+		],
+		"description": "패딩 All"
+		},	
+	"패딩 only": {
+		"prefix": "pado",
+		"scope": "dart",
+		"body": [
+			"padding: EdgeInsets.only(top:10, bottom:10),"
+		],
+		"description": "패딩 only"
+		},	
+	"패딩 symmetric": {
+		"prefix": "pads",
+		"scope": "dart",
+		"body": [
+			"padding: EdgeInsets.symmetric(horizontal:15, vertical:5),"
+		],
+		"description": "패딩 symmetric"
+		},	
+	"온프레스트": {
+		"scope": "dart",
+		"prefix": "onP",
+		"body": [
+			"onPressed:(){},"
+		],
+		"description": "온프레스트"
+		},	
+	"온탭": {
+		"scope": "dart",
+		"prefix": "onT",
+		"body": [
+			"onTap:(){},"
+		],
+		"description": "온탭"
+		},
+	"SharedPreferences": {
+		"scope": "dart",
+		"prefix": "Shared",
+		"body": [
+			"SharedPreferences"
+		],
+		"description": "SharedPreferences"
+		},
+	"setSate": {
+		"scope": "dart",
+		"prefix": "setS",
+		"body": [
+			"setState((){});"
+		],
+		"description": "setState"
+		},
+	"setSate ": {
+		"scope": "dart",
+		"prefix": "setState",
+		"body": [
+			"setState((){});"
+		],
+		"description": "setState"
+		},
+	"initState(){} ": {
+		"prefix": "init",
+		"scope": "dart",
+		"body": [
+			"@override",
+			"void initState() {",
+			"  super.initState();",
+			"  $1",
+			"}"
+		],
+		"description": "initState(){}"
+		},
+	"initState(){}": {
+		"prefix": "initS",
+		"scope": "dart",
+		"body": [
+			"@override",
+			"void initState() {",
+			"  super.initState();",
+			"  $1",
+			"}"
+		],
+		"description": "initState(){}"
+		},	
+	"엘리베이티드버튼": {
+		"scope": "dart",
+		"prefix": "elev",
+		"body": [
+			"ElevatedButton(",
+			"  child: Icon(Icons.add),",
+			"  onPressed: (){},",
+			"),"
+		],
+		"description": "엘리베이티드버튼"
+		},
+	"엘리베이티드버튼_텍스트": {
+		"scope": "dart",
+		"prefix": "elev",
+		"body": [
+			"ElevatedButton(",
+			"  child: Text(''),",
+			"  onPressed: (){},",
+			"),"
+		],
+		"description": "엘리베이티드버튼_텍스트"
+		},
+	"아이콘버튼": {
+		"scope": "dart",
+		"prefix": "iconb",
+		"body": [
+			"IconButton(",
+			"  icon: Icon(Icons.add),",
+			"  onPressed: (){},",
+			"),"
+		],
+		"description": "아이콘버튼"
+		},
+	"이미지": {
+		"scope": "dart",
+		"prefix": "image",
+		"body": [
+			"Image.asset('images/',),"
+		],
+		"description": "이미지"
+		},
+	"그림자Container안 deco": {
+		"scope": "dart",
+  		"prefix": "shadow",
+		"body": [
+			"decoration: BoxDecoration(",
+			"   boxShadow: [",
+			"     BoxShadow(",
+			"       color: const Color.fromARGB(255, 244, 247, 253).withOpacity(0.5),",
+			"       spreadRadius: 2,",
+			"       blurRadius: 12,",
+			"       offset: const Offset(3, 3),",
+			"     ),",
+			"   ],",
+			"),"
+		],
+		"description": "그림자Container안 deco"
+		},
+	"이미지컨테이너": {
+		"scope": "dart",
+		"prefix": "imagecon",
+		"body": [
+			"Container(",
+			"  decoration: BoxDecoration(",
+			"    boxShadow: [",
+			"      BoxShadow(",
+			"        color: const Color.fromARGB(255, 156, 150, 156).withOpacity(0.5),",
+			"        spreadRadius: 2,",
+			"        blurRadius: 12,",
+			"        offset: const Offset(3, 3),",
+			"      ),",
+			"    ],",
+			"  ),",
+			"  child: Image.asset(imageName, height: 90, width: 110, fit: BoxFit.fill),",
+			");"
+		],
+		"description": "이미지컨테이너"
+		},
+	"itemBuilder": {
+		"scope": "dart",
+		"prefix": "itemB",
+		"body": [
+			"itemBuilder:(context, i)=> oneItem(list[i])"
+		],
+		"description": "itemBuilder"
+		},
+	"리스트뷰빌더": {
+		"scope": "dart",
+		"prefix": "listvb",
+		"body": [
+			"ListView.builder(",
+			"  // itemExtent: 140,",
+			"  itemCount: $1,",
+			"  itemBuilder: (context, i) {",
+			"",
+			"    return Card(",
+			"      elevation: 5,",
+			"      child: Row(",
+			"        crossAxisAlignment: CrossAxisAlignment.center,",
+			"        children: [",
+			"          SizedBox(width: 10),",
+			"          Expanded(",
+			"            child: Column(",
+			"              crossAxisAlignment: CrossAxisAlignment.start,",
+			"              mainAxisAlignment: MainAxisAlignment.center,",
+			"              children: [",
+			"                Text(''),",
+			"                const SizedBox(height: 5), // 텍스트 사이 간격 조정",
+			"                Text(''),",
+			"                const SizedBox(height: 10),",
+			"              ],",
+			"           ),",
+			"         ),",
+			"        ],",
+			"      ),",
+			"    );",
+			"}),"
+		],
+		"description": "리스트뷰빌더"
+		},
+	"ListView.separated": {
+		"scope": "dart",
+		"prefix": "listvs",
+		"body": [
+			"ListView.separated(",
+			"  itemCount: movieList.length,",
+			"  separatorBuilder: (context, i) {",
+			"    return const Divider(); },",
+			"  itemBuilder: (context, i) {",
+			"    return Card();"
+		],
+		"description": "ListView.separated"
+		},
+	"FutureBuilder.ListView": {
+		"scope": "dart",
+		"prefix": "FutureB",
+		"body": [
+			"FutureBuilder(",
+			"  future: getMemosFromDB(),",
+			"  builder: (context, snapshot) {",
+			"    if (snapshot.connectionState == ConnectionState.waiting) {",
+			"      return Container(child: const CircularProgressIndicator());",
+			"    } else if (snapshot.hasError) {",
+			"      return Center(child: Text('Error: ${snapshot.error}'));",
+			"    } else if (!snapshot.hasData || snapshot.data!.isEmpty) {",
+			"      return const Center(",
+			"          child: Text(",
+			"        '메모를 추가하세요.\\n\\n\\n\\n\\n\\n',",
+			"        style: TextStyle(fontSize: 20),",
+			"      ));",
+			"    } else {",
+			"      return ListView.builder(",
+			"          physics: const BouncingScrollPhysics(),",
+			"          itemCount: snapshot.data!.length,",
+			"          itemBuilder: (context, i) {",
+			"            Memo memo = snapshot.data![i];",
+			"            return Container(",
+			"              margin:",
+			"                  const EdgeInsets.symmetric(vertical: 10, horizontal: 8),",
+			"              padding: const EdgeInsets.all(15),",
+			"              decoration: BoxDecoration(",
+			"                boxShadow: [",
+			"                  BoxShadow(",
+			"                      color: const Color.fromARGB(255, 100, 99, 99).withOpacity(0.3),",
+			"                      spreadRadius: 3,",
+			"                      blurRadius: 3,",
+			"                      offset: const Offset(0, 0)),",
+			"                ],",
+			"                color: const Color.fromARGB(255, 214, 225, 214),",
+			"                border: Border.all(width: 1, color: Colors.grey),",
+			"                borderRadius: BorderRadius.circular(16.0),",
+			"              ),",
+			"              child: Column(",
+			"                crossAxisAlignment: CrossAxisAlignment.stretch,",
+			"                children: [",
+			"                  Column(",
+			"                    crossAxisAlignment: CrossAxisAlignment.stretch, ",
+			"",			"                    children: [",
+			"                      Text(memo.title,",
+			"                          style: const TextStyle(",
+			"                              fontSize: 24, fontWeight: FontWeight.bold)),",
+			"                      Text(memo.text,",
+			"                          style: const TextStyle(fontSize: 20)),",
+			"                    ],",
+			"                  ),",
+			"                  Column(",
+			"                    crossAxisAlignment:",
+			"                        CrossAxisAlignment.stretch, ",
+			"                    children: [",
+			"                      Text(",
+			"                        ('수정: ${memo.editedTime.split('.')[0]}'),",
+			"                        style: const TextStyle(fontSize: 17),",
+			"                        textAlign: TextAlign.end,.",
+			"                      ),",
+			"                    ],",
+			"                  ),",
+			"                ],",
+			"              ),",
+			"            );",
+			"          });",
+			"    }",
+			"  });"
+		],
+		"description": "FutureBuilder.ListView"
+		},
+	"FutureBuilder(future: , builder:)": {
+		"scope": "dart",
+		"prefix": "FutureB",
+		"body": [
+			"FutureBuilder(",
+			"  future: _getMemoData(), // 퓨처값 가져올 비동기 함수",
+			"  builder: (contex, snapshot) {",
+			"    if (snapshot.connectionState == ConnectionState.waiting) {",
+			"      return const Center(child: CircularProgressIndicator());",
+			"    } else if (snapshot.hasError) {",
+			"      return Center(child: Text('Error: ${snapshot.error}'));",
+			"    } else if (!snapshot.hasData || snapshot.data!.isEmpty) {",
+			"      return const Center(child: Text('No data'));",
+			"    } else {",
+			"      Memo memo = snapshot.data![0];",
+			"      return Container(",
+			"        child: Column(",
+			"          children: [",
+			"            Text(memo.id),",
+			"            Text(memo.title),",
+			"            Text(memo.text),",
+			"            Text(memo.createdTime),",
+			"          ],",
+			"        ),",
+			"      );",
+			"    }",
+			"  }),"
+		],
+		"description": "FutureBuilder(future: , builder:)"
+		},
+	"쉐도우 컨테이너": {
+		"scope": "dart",
+		"prefix": "sha",
+		"body": [
+			"Container(",
+			"  height: 200,",
+			"  decoration: BoxDecoration(",
+			"    color: const Color.fromARGB(255, 236, 244, 233),",
+			"    borderRadius: BorderRadius.circular(20),",
+			"      boxShadow: [",
+			"        BoxShadow(",
+			"          color: const Color.fromARGB(255, 100, 99, 99)",
+			"              .withOpacity(0.3),",
+			"          spreadRadius: 3,",
+			"          blurRadius: 3,",
+			"          offset: const Offset(0, 0)),",
+			"    ],",
+			"  ),",
+			"  child: _makeOneMovie(movieList[i])),"
+		],
+		"description": "쉐도우 컨테이너"
+		},
+	"boxShadow": {
+		"scope": "dart",
+		"prefix": "box",
+		"body": [
+			"boxShadow: [",
+			"  BoxShadow(",
+			"    color: const Color.fromARGB(255, 100, 99, 99).withOpacity(0.3),",
+			"    spreadRadius: 3,",
+			"    blurRadius: 3,",
+			"    offset: const Offset(0, 0)),",
+			"  ],"
+		],
+		"description": "boxShadow"
+		},
+	"import": {
+		"scope": "dart",
+		"prefix": "im",
+		"body": [
+			"import"
+		],
+		"description": "import"
+		},
+	"'material.dart'패키지": {
+		"scope": "dart",
+		"prefix": "ma",
+		"body": [
+			"'package:flutter/material.dart';$1"
+		],
+		"description": "'material.dart'패키지"
+		},
+	"임포트material": {
+		"scope": "dart",
+		"prefix": "imm",
+		"body": [
+			"import 'package:flutter/material.dart';$1"
+		],
+		"description": "임포트material"
+		},
+	"http임포트": {
+		"scope": "dart",
+		"prefix": "imh",
+		"body": [
+			"import 'package:http/http.dart' as http;"
+		],
+		"description": "http임포트"
+		},
+	"import 'cloud_firestore'": {
+		"scope": "dart",
+		"prefix": "imc",
+		"body": [
+			"import 'package:cloud_firestore/cloud_firestore.dart';"
+		],
+		"description": "import 'cloud_firestore'"
+		},
+	"firebase_auth.dart": {
+		"scope": "dart",
+		"prefix": "au",
+		"body": [
+			"'package:firebase_auth/firebase_auth.dart';"
+		],
+		"description": "firebase_auth.dart"
+		},
+	"CircularProgressIndiator()": {
+		"scope": "dart",
+		"prefix": "Cir",
+		"body": [
+			"CircularProgressIndicator()"
+		],
+		"description": "CircularProgressIndiator()"
+		},	
+	"http Future<List>": {
+		"scope": "dart",
+		"prefix": "http",
+		"body": [
+			"Future<List<Movie>> loadMovies() async {",
+			"  Uri url = Uri.parse(",
+			"    'https://api.themoviedb.org/3/movie/popular?api_key=45dfb0ff4a22c1a95d0041615999de56');",
+			"",
+			"  var response = await http.get(url);",
+			"  var data = await jsonDecode(response.body);",
+			"  if (data != null) {",
+			"    return data['result'];",
+			"  }",
+			"  return [];",
+			"}"
+		],
+		"description": "http Future<List>"
+		},
+	"http Future<List<Movie>>": {
+		"scope": "dart",
+		"prefix": "http",
+		"body": [
+			"Future<List<Movie>> loadMovies() async {",
+			"  Uri url = Uri.parse(",
+			"    'https://api.themoviedb.org/3/movie/popular?api_key=45dfb0ff4a22c1a95d0041615999de56');",
+			"",
+			"  var response = await http.get(url);",
+			"  var data = await jsonDecode(response.body);",
+			"  if (data != null) {",
+			"    List<dynamic> list = data['result'];",
+			"    return list.map((item) => Movie.fromJson(item)).toList();",
+			"  }",
+			"  return [];",
+			"}"
+		],
+		"description": "http Future<List<Movie>>"
+		},
+	"앱바": {
+		"prefix": "appB",
+		"scope": "dart",
+		"body": [
+			"appBar: AppBar(title: const Text('Provider Sample')),"
+		],
+		"description": "앱바"
+		},
+	"플로팅액션버튼": {
+		"prefix": "fl",
+		"scope": "dart",
+		"body": [
+			"floatingActionButton: FloatingActionButton(",
+			"  elevation:2,",
+			"  child: $1,",
+			"  onPressed:(){},",
+			"),"
+		],
+		"description": "플로팅액션버튼"
+		},
+	"센터 플로팅액션버튼": {
+		"scope": "dart",
+		"prefix": "centerfl",
+		"body": [
+			"floatingActionButton: Align(",
+			"  alignment: Alignment.center,",
+			"  child: FloatingActionButton(",
+			"    onPressed: () {",
+			"    },",
+			"    child: Text('Ask'),",
+			"    backgroundColor: Colors.blue.shade300,",
+			"    foregroundColor: Colors.black,",
+			"    shape: RoundedRectangleBorder(",
+			"      borderRadius: BorderRadius.circular(16.0),",
+			"      ),",
+			"    ),",
+			"    elevation: 20.0,",
+			"  ),",
+			"),"
+		],
+		"description": "센터 플로팅액션버튼"
+		},
+	"메인엑시스 센터": {
+		"scope": "dart",
+		"prefix": "mainA",
+		"body": [
+			"mainAxisAlignment: MainAxisAlignment.center,"
+		],
+		"description": "메인엑시스 센터"
+		},
+	"크로스엑시스 센터": {
+		"scope": "dart",
+		"prefix": "crossA",
+		"body": [
+			"crossAxisAlignment: CrossAxisAlignment.center,"
+		],
+		"description": "크로스엑시스 센터"
+		},
+	"textAlign": {
+		"scope": "dart",
+		"prefix": "textA",
+		"body": [
+			"textAlign: TextAlign.end"
+		],
+		"description": "textAlign"
+		},
+	"Provider.of<>(context)": {
+		"scope": "dart",
+		"prefix": "pro",
+		"body": [
+			"Provider.of<$1Counter>(context)"
+		],
+		"description": "Provider.of<>(context)"
+		},
+	"ChangeNotificationProvider": {
+		"scope": "dart",
+		"prefix": "cha",
+		"body": [
+			"ChangeNotifierProvider(",
+			"  create: (context) => Counter(),",
+			"  child: Home(),"
+		],
+		"description": "ChangeNotificationProvider"
+		},
+	"ChangeNotifierProvider생성자": {
+		"prefix": "cha",
+		"scope": "dart",
+		"body": [
+			"ChangeNotifierProvider(create: (context)=> Counter()),"
+		],
+		"description": "ChangeNotifierProvider생성자"
+		},	
+
+	"컨슈머": {
+		"scope": "dart",
+		"prefix": "con",
+		"body": [
+			"Consumer<$1Counter>(builder: (context, provider, child) {",
+			"  return Text(provider.count.toString());"
+		],
+		"description": "컨슈머"
+		},
+	"Provider클래스": {
+		"scope": "dart",
+		"prefix": "pro",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $1Counter extends ChangeNotifier {",
+			"  int _count = 0;",
+			"  int get $2count => _count;",
+			"  void add() {",
+			"    _count++;",
+			"    notifyListeners();",
+			"  }",
+			"",
+			"  void minus() {",
+			"    _count--;",
+			"    notifyListeners();",
+			"  }",
+			"}"
+		],
+		"description": "Provider클래스"
+		},
+	"MultiProvider": {
+		"scope": "dart",
+		"prefix": "mul",
+		"body": [
+			"MultiProvider(",
+			"  providers:[",
+			"    ChangeNotifierProvider(create: (context)=> $1Counter()),",
+			"    ChangeNotifierProvider(create: (context)=> Bottom()),",
+			"  ],",
+			"  child: const Home(),",
+			"),"
+		],
+		"description": "MultiProvider"
+		},
+	"bottomNavigationBar": {
+		"scope": "dart",
+		"prefix": "bot",
+		"body": [
+			"BottomNavigationBar(",
+			"  items: const [",
+			"    BottomNavigationBarItem(icon: Icon(Icons.home), label: '$1Home'),",
+			"    BottomNavigationBarItem(icon: Icon(Icons.movie), label: 'Movie'),",
+			"    BottomNavigationBarItem(icon: Icon(Icons.business), label: '회사'),",
+			"    BottomNavigationBarItem(icon: Icon(Icons.school), label: '학교'),",
+			"  ],",
+			"  type: BottomNavigationBarType.fixed, // 아이콘이 이동하지 않도록 고정",
+			"  currentIndex: 0,",
+			"  selectedItemColor: Colors.red,",
+			"  selectedFontSize: 14.0, ",
+			"  unselectedFontSize: 12.0,",
+			"  selectedLabelStyle:",
+			"      const TextStyle(fontWeight: FontWeight.bold),",
+			"  unselectedLabelStyle: const TextStyle(",
+			"      fontWeight: FontWeight.normal), ",
+			"  unselectedItemColor: Colors.grey.withOpacity(0.7), // 투명도 조절",
+			"  onTap: (index) {",
+			"    print('$index 가 선택되었습니다.');",
+			"    ",
+			"  },",
+			")"
+		],
+		"description": "bottomNavigationBar"
+		},
+	"Provider import": {
+		"scope": "dart",
+		"prefix": "imp",
+		"body": [
+			"import 'package:provider/provider.dart';"
+		],
+		"description": "Provider import"
+		},
+	"ClipRRect": {
+		"scope": "dart",
+		"prefix": "clip",
+		"body": [
+			"ClipRRect(",
+			"  borderRadius: const BorderRadius.only(",
+			"      topLeft: Radius.circular(20),",
+			"      bottomLeft: Radius.circular(20)),",
+			"  // borderRadius: const BorderRadius.vertical(",
+			"  //     top: Radius.circular(20), bottom: Radius.circular(20)),",
+			"  child: Image.network(movie.posterUrl)),"
+		],
+		"description": "ClipRRect"
+		},
+	"Dio": {
+		"scope": "dart",
+ 		"prefix": "dio",
+		"body": [
+			"Dio(",
+			"  BaseOptions(",
+			"    baseUrl: \"https://api.themoviedb.org\",",
+			"    queryParameters: {",
+			"      'api_key': '45dfb0ff4a22c1a95d0041615999de56',",
+			"    },",
+			"  ),",
+			");"
+		],
+		"description": "Dio"
+		},
+
+	"dio.get()": {
+		"scope": "dart",
+		"prefix": "dio",
+		"body": [
+			"Future<List<Map<String, dynamic>>> loadGenre() async {",
+			"    var response = await _dio.get('/3/genre/movie/list');",
+			"    if (response.data != null) {",
+			"      // dio는 body로 접근하지 않고, data로 접근한다.",
+			"      var data = response.data['genres'] as List;",
+			"      return data.map((genre) => genre as Map<String, dynamic>).toList();",
+			"    } else {",
+			"      return [];",
+			"    }",
+			"  }"
+		],
+		"description": "dio.get()"
+		},
+
+
+	"EdgeInsets": {
+			"prefix": "ed",
+			"scope": "dart",
+			"body": [
+				"EdgeInsets.all(10),"
+			],
+			"description": "엣지인셋"
+			},
+
+	"borderRadius": {
+			"scope": "dart",
+			"prefix": "borderR",
+			"body": [			
+				"borderRadius: BorderRadius.circular(16.0),",			
+			],
+			"description": "borderRadius"
+			},
+	"boxShadow: [ BoxShadow() ]": {
+		"scope": "dart",
+		"prefix": "boxSh",
+		"body": [
+			"boxShadow: [",
+			"  BoxShadow(",
+			"      color: Colors.black.withOpacity(0.3),",
+			"      spreadRadius: 1,",
+			"      blurRadius: 1,",
+			"      offset: const Offset(0, 1)),",
+			"],"
+		],
+		"description": "boxShadow: [ BoxShadow() ]"
+		},
+	"boxShadow: [ BoxShadow() ]2": {
+		"scope": "dart",
+		"prefix": "boxSha",
+		"body": [
+			"boxShadow: [",
+			"  BoxShadow(",
+			"      color: Colors.black.withOpacity(0.3),",
+			"      spreadRadius: 1,",
+			"      blurRadius: 1,",
+			"      offset: const Offset(0, 1)),",
+			"],"
+		],
+		"description": "boxShadow: [ BoxShadow() ]"
+		},
+	"deco Boxdeco": {
+			"scope": "dart",
+			"prefix": "deco",
+			"body": [
+				"decoration:BoxDecoration(",
+				"    border:Border.all(width:1, color:Colors.grey),",
+				"    borderRadius: BorderRadius.circular(16.0),",
+				"    color:isActive? Colors.grey : Colors.white,",
+				"  ),"
+			],
+			"description": "deco Boxdeco"
+			},
+	"deco:InputDeco": {
+		"scope": "dart",
+		"prefix": "decoi",
+		"body": [
+			"decoration:InputDecoration(border:InputBorder.none),"
+		],
+		"description": "deco:InputDeco"
+		},
+	"Navigator": {
+		"scope": "dart",
+		"prefix": "nav",
+		"body": [
+			"Navigator.push(",
+			"  context,",
+			"  MaterialPageRoute(",
+			"      builder: (context) => MovieDetail()));"
+		],
+		"description": "Navigator"
+		},
+	"Navigator+프로바이더": {
+		"scope": "dart",
+		"prefix": "nav",
+		"body": [
+			"Navigator.push(",
+			"  context,",
+			"  MaterialPageRoute(",
+			"      builder: (context) => MovieDetail(moviePro: moviePro)));"
+		],
+		"description": "Navigator+프로바이더"
+		},
+	"아이콘+텍스트 버튼": {
+		"scope": "dart",
+		"prefix": "TextB",
+		"body": [
+			"TextButton.icon(",
+			"  onPressed: () {},",
+			"  icon: const Icon(Icons.add),",
+			"  label: const Text(''),",
+			"  style: TextButton.styleFrom(",
+			"      foregroundColor: Colors.white,",
+			"      backgroundColor: Palette.googleColor,",
+			"      minimumSize: const Size(155, 40),",
+			"      shape: RoundedRectangleBorder(",
+			"        borderRadius: BorderRadius.circular(20),",
+			"      )),",
+			")"
+		],
+		"description": "아이콘+텍스트 버튼"
+		},
+	"아이콘+텍스트 버튼": {
+		"scope": "dart",
+		"prefix": "shape",
+		"body": [
+			"shape: RoundedRectangleBorder(",
+			"   borderRadius: BorderRadius.circular(20),),"
+		],
+		"description": "아이콘+텍스트 버튼"
+		},
+	"RoundedRectangleBorder": {
+		"scope": "dart",
+		"prefix": "Round",
+		"body": [
+			"RoundedRectangleBorder(",
+			"  borderRadius: BorderRadius.circular(20),),"
+		],
+		"description": "RoundedRectangleBorder"
+		},
+
+	"Movie_Card1": {
+		"scope": "dart",
+		"prefix": "row",
+		"body": [
+			"Row(",
+			"  children: [",
+			"    ClipRRect(",
+			"      borderRadius: const BorderRadius.only(",
+			"          topLeft: Radius.circular(20),",
+			"          bottomLeft: Radius.circular(20)),",
+			"      child: Image.network(movie.posterUrl)),",
+			"    Expanded(",
+			"      child: Padding(",
+			"        padding: const EdgeInsets.all(15),",
+			"        child: Column(",
+			"          crossAxisAlignment: CrossAxisAlignment.stretch,",
+			"          children: [",
+			"            Text(",
+			"              'movie.title!',",
+			"              style: const TextStyle(",
+			"                  fontSize: 14, fontWeight: FontWeight.bold),",
+			"            ),",
+			"            const SizedBox(height: 10),",
+			"            Expanded(",
+			"              child: Text(",
+			"                'movie.overview!',",
+			"                overflow: TextOverflow.ellipsis,",
+			"                maxLines: 6,",
+			"                style: const TextStyle(",
+			"                  fontSize: 13,",
+			"                ),",
+			"              ),",
+			"            ),",
+			"          ],",
+			"        ),",
+			"      ),",
+			"    )",
+			"  ],",
+			");"
+		],
+		"description": "Movie_Card1"
+		},
+	"슈파베이스": {
+		"scope": "dart",
+		"prefix": "supa",
+		"body": [
+			"Supabase.initialize(url: $1url, anonKey: key);"
+		],
+		"description": "슈파베이스"
+		},
+	"EdgeInsets": {
+		"scope": "dart",
+		"prefix": "edge",
+		"body": [
+			"EdgeInsets"
+		],
+		"description": "EdgeInsets"
+		},
+	"color: Colors.blue": {
+		"scope": "dart",
+		"prefix": "color",
+		"body": [
+			" color: Colors.blue$1,"
+		],
+		"description": "color: Colors.blue"
+		},
+	"Icon(Icons.send)": {
+		"scope": "dart",
+		"prefix": "Ico",
+		"body": [
+			"Icon(Icons.send$1,),"
+		],
+		"description": "Icon(Icons.send)"
+		},
+	"FocusScope.of(context)..": {
+		"scope": "dart",
+		"prefix": "focus",
+		"body": [
+			"FocusScope.of(context).requestFocus(titleFocus);"
+		],
+		"description": "FocusScope.of(context).."
+		},
+	"margin: EdgeInsets.symmetric": {
+		"scope": "dart",
+		"prefix": "margin",
+		"body": [
+			"margin: EdgeInsets.symmetric(vertical: 10, horizontal: 8),"
+		],
+		"description": "margin: EdgeInsets.symmetric"
+		},
+	"FontWeight.bold": {
+		"scope": "dart",
+		"prefix": "fontW",
+		"body": [
+			"fontWeight:FontWeight.bold"
+		],
+		"description": "FontWeight.bold"
+		},
+	"FontWeight.bold ": {
+		"scope": "dart",
+		"prefix": "fw",
+		"body": [
+			"fontWeight:FontWeight.bold"
+		],
+		"description": "FontWeight.bold"
+		},
+	"overflow: TextOverflow.ellipsis": {
+		"scope": "dart",
+		"prefix": "overfl",
+		"body": [
+			"overflow: TextOverflow.ellipsis,"
+		],
+		"description": "overflow: TextOverflow.ellipsis"
+		},
+	"TextEditingController()": {
+		"scope": "dart",
+		"prefix": "TextE",
+		"body": [
+			"TextEditingController();"
+		],
+		"description": "TextEditingController()"
+		},
+	"SnackBar ScaffoldMessenger.of(cont..)": {
+		"scope": "dart",
+		"prefix": "snack",
+		"body": [
+			"ScaffoldMessenger.of(context)",
+			"  .showSnackBar(const SnackBar(",
+			"     content:",
+			"       Text('Please check your email and password'),",
+			"     backgroundColor: Colors.black,",
+			"));"
+		],
+		"description": "SnackBar ScaffoldMessenger.of(cont..)"
+		},
+	"import firebase_auth": {
+		"scope": "dart",
+		"prefix": "imau",
+		"body": [
+			"import 'package:firebase_auth/firebase_auth.dart';"
+		],
+		"description": "import firebase_auth"
+		},
+
+	"authentication instance": {
+		"scope": "dart",
+		"prefix": "_auth",
+		"body": [
+			"final _auth = FirebaseAuth.instance;"
+		],
+		"description": "authentication instance"
+		},
+	"ensureInitialized()": {
+		"scope": "dart",
+		"prefix": "ensure",
+		"body": [
+			"WidgetsFlutterBinding.ensureInitialized();"
+		],
+		"description": "ensureInitialized()"
+		},
+
+	"useEffect.fetch": {
+		"scope": "javascript",
+		"prefix": "fetch",
+		"body": [
+			"const url =`https://api.themoviedb.org/3/movie/popular?api_key=45dfb0ff4a22c1a95d0041615999de56`;",
+			"useEffect(()=>{",
+			"    (async()=>{",
+			"        const data = await (await fetch(url)).json();",
+			"        console.log(data);",
+			"    })();",
+			"},[]);"
+		],
+		"description": "useEffect.fetch"
+		},
+	"자바스크립트fetch": {
+		"scope": "javascript",
+		"prefix": "fetch",
+		"body": [
+			"const url =`https://api.themoviedb.org/3/movie/popular?api_key=45dfb0ff4a22c1a95d0041615999de56`;",
+			"const getData = async()=>{",
+			"    const data = await (await fetch(url)).json();",
+			"    console.log(data);",
+			"    return data;",
+			"}"
+		],
+		"description": "자바스크립트fetch"
+		},
+	"(req,res)=>{ res.send('  ') }": {
+		"scope": "javascript",
+		"prefix": "(req",
+		"body": [
+			"(req,res)=>{",
+			"    res.status(200).send('Contacts Page');"
+		],
+		"description": "(req,res)=>{ res.send('  ') }"
+		},
+	"asyncHandler(async(req,res)=>{ });": {
+		"scope": "javascript",
+		"prefix": "asyncH",
+		"body": [
+			"asyncHandler(async(req,res)=>{",
+			"    res.status(200).send('Contacts Page');",
+			"});"
+		],
+		"description": "asyncHandler(async(req,res)=>{ });"
+		},
+	"router = express.Router();": {
+		"scope": "javascript",
+		"prefix": "router",
+		"body": [
+			"router = express.Router();"
+		],
+		"description": "router = express.Router();"
+		},
+	"module.exports =": {
+		"scope": "javascript",
+		"prefix": "modu",
+		"body": [
+			"module.exports = "
+		],
+		"description": "module.exports ="
+		},
+	"mongoose = require('mongoose');": {
+		"scope": "javascript",
+		"prefix": "mongoose",
+		"body": [
+			"mongoose = require('mongoose');"
+		],
+		"description": "mongoose = require('mongoose');"
+		},
+	"dbConnect=async()=>{mongo..process.env": {
+		"scope": "javascript",
+		"prefix": "dbcon",
+		"body": [
+			"const dbConnect = async()=>{",
+			"    try{",
+			"        const connect = await mongoose.connect(process.env.DB_CONNECT);",
+			"        console.log('DB Connected.');",
+			"    } catch(e){",
+			"        console.log(e);",
+			"    }",
+			"}"
+		],
+		"description": "dbConnect=async()=>{mongo..process.env"
+		},
+	"mongoose.Schema": {
+		"scope": "javascript",
+		"prefix": "schema",
+		"body": [
+			"const contactSchema = new mongoose.Schema({",
+			"    name:{",
+			"        type:String,",
+			"        required: true,",
+			"    }, ",
+			"    email:{",
+			"        type:String,        ",
+			"    }, ",
+			"    phone:{",
+			"        type:String,",
+			"        required:[true, '전화번호는 꼭 기입해주세요']",
+			"    }",
+			"}, {timestamps:true});"
+		],
+		"description": "mongoose.Schema"
+		},
+	"mongoose.model": {
+		"scope": "javascript",
+		"prefix": "mongoose.model",
+		"body": [
+			"const Contact = mongoose.model('Contact', contactSchema);"
+		],
+		"description": "mongoose.model"
+		},
+	"app.get('/',(req,res)=>{ });": {
+		"scope": "javascript",
+		"prefix": "app.get",
+		"body": [
+			"app.get('/', (req, res)=>{",
+			"    res.send('Hello, Node!');",
+			"})"
+		],
+		"description": "app.get('/',(req,res)=>{ });"
+		},
+	"app.use(express.json, urlencoded)": {
+		"scope": "javascript",
+		"prefix": "app.use",
+		"body": [
+			"app.use(express.json());",
+			"app.use(express.urlencoded({extended:true}));"
+		],
+		"description": "app.use(express.json, urlencoded)"
+		},
+	"app.use('/contacts', require(router))ess.json, urlencoded)": {
+		"scope": "javascript",
+		"prefix": "app.use",
+		"body": [
+			"app.use('/contacts', require('./routes/contactRouter'))"
+		],
+		"description": "app.use('/contacts', require(router))ess.json, urlencoded)"
+		},
+	"app.listen(3000, ()=>{})": {
+		"scope": "javascript",
+		"prefix": "app.listen",
+		"body": [
+			"app.listen(3000,()=>{",
+			"    console.log('서버 실행중');",
+			"})"
+		],
+		"description": "app.listen(3000, ()=>{})"
+		},
+	"require('dotenv').config(); ": {
+		"scope": "javascript",
+		"prefix": "envconfig",
+		"body": [
+			"require('dotenv').config(); "
+		],
+		"description": "require('dotenv').config(); "
+		}
+}
