@@ -88,6 +88,7 @@
 		"description": "홈.dart"
 		},
 	"일반페이지": {
+		"scope": "dart",
 		"prefix": "page",
 		"body": [
 			"import 'package:flutter/material.dart';",
@@ -368,7 +369,7 @@
 		"scope": "dart",
 		"prefix": "setS",
 		"body": [
-			"setState((){});"
+			"setState((){$1});"
 		],
 		"description": "setState"
 		},
@@ -376,7 +377,7 @@
 		"scope": "dart",
 		"prefix": "setState",
 		"body": [
-			"setState((){});"
+			"setState((){$1});"
 		],
 		"description": "setState"
 		},
