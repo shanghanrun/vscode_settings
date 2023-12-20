@@ -992,7 +992,7 @@
 		},
 
 
-	"EdgeInsets": {
+	"EdgeInsets ": {
 			"prefix": "ed",
 			"scope": "dart",
 			"body": [
@@ -1005,7 +1005,7 @@
 			"scope": "dart",
 			"prefix": "borderR",
 			"body": [			
-				"borderRadius: BorderRadius.circular(16.0),",			
+				"borderRadius: BorderRadius.circular(16.0),"			
 			],
 			"description": "borderRadius"
 			},
@@ -1079,7 +1079,7 @@
 		],
 		"description": "Navigator+프로바이더"
 		},
-	"아이콘+텍스트 버튼": {
+	"아이콘+텍스트 버튼 ": {
 		"scope": "dart",
 		"prefix": "TextB",
 		"body": [
