@@ -156,7 +156,22 @@
 		],
 		"description": "텍스트"
 		},
-
+	"Text(' ', ..fontSize)": {
+		"scope": "dart",
+		"prefix": "tfs",
+		"body": [
+			"Text('$1', style: TextStyle(fontSize:20,),),"
+		],
+		"description": "Style: 텍스트스타일"
+	},
+	"Text(' ', ..color)": {
+		"scope": "dart",
+		"prefix": "tc",
+		"body": [
+			"Text('$1', style: TextStyle(color:Colors.blue),),"
+		],
+		"description": "Style: 텍스트스타일"
+	},
 	"style: 텍스트스타일": {
 		"scope": "dart",
 		"prefix": "sts",
@@ -173,13 +188,21 @@
 		],
 		"description": "텍스트스타일"
 	},
-	"텍스트스타일2": {
+	"텍스트 All스타일": {
 		"scope": "dart",
-		"prefix": "tts",
+		"prefix": "tta",
 		"body": [
 			"Text('', style: TextStyle(fontSize:20, color:Colors.blue),),"
 		],
-		"description": "텍스트스타일2"
+		"description": "텍스트 All스타일"
+		},
+	"텍스트 All스타일 ": {
+		"scope": "dart",
+		"prefix": "ta",
+		"body": [
+			"Text('', style: TextStyle(fontSize:20, color:Colors.blue),),"
+		],
+		"description": "텍스트 All스타일"
 		},
 	"로우": {
 		"scope": "dart",
@@ -323,6 +346,38 @@
 			"icon: Icon(Icons.mouse),"
 		],
 		"description": "아이콘icon:Icon"
+		},
+	"SizedBox height": {
+		"scope": "dart",
+		"prefix": "sizeh",
+		"body": [
+			"SizedBox(height: 30$1),"
+		],
+		"description": "SizedBox height"
+		},
+	"SizedBox height ": {
+		"scope": "dart",
+		"prefix": "sh",
+		"body": [
+			"SizedBox(height: 30$1),"
+		],
+		"description": "SizedBox height"
+		},
+	"SizedBox width": {
+		"scope": "dart",
+		"prefix": "sizew",
+		"body": [
+			"SizedBox(width: 30$1),"
+		],
+		"description": "SizedBox width"
+		},
+	"SizedBox width": {
+		"scope": "dart",
+		"prefix": "sw",
+		"body": [
+			"SizedBox(width: 30$1),"
+		],
+		"description": "SizedBox width"
 		},
 	"SizedBox": {
 		"scope": "dart",
