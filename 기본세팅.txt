@@ -9,3 +9,7 @@ tree indent > Workbench >Tree: indent   14
 Sort order > fileFirst
 icon  > Workbench: Icon Theme - Material Icon Theme
 Theme > Workbench: Color Theme - Dark Modern
+
+use inline Completions   ;  Video(id:   name:  ) 등 기본 파라미터 보여줌.
+
+Code Spell Checker 익스텐션 추가 설치
